@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 340" role="img" aria-label="Tejaswi Suresh. The security gateway for AI agents.">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="0.55" stop-color="#5b6cf0"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#6366f1" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#6366f1" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowI" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#e6e8f0" stroke-width="1"/>
+    </pattern>
+    <clipPath id="wordClip">
+      <text x="212" y="176" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="58" font-weight="700" letter-spacing="4">TEJASWI SURESH</text>
+    </clipPath>
+    <style>
+      @keyframes gridIn { from { opacity: 0 } to { opacity: 1 } }
+      @keyframes breathe { 0%,100% { opacity: .5 } 50% { opacity: 1 } }
+      @keyframes sweep { 0% { transform: translateX(-260px) } 100% { transform: translateX(1240px) } }
+      @keyframes bob { 0%,100% { transform: translateY(0); opacity: .85 } 50% { transform: translateY(-6px); opacity: 1 } }
+      @keyframes sheenmove { 0% { transform: translateX(-360px) } 55%,100% { transform: translateX(760px) } }
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+      @keyframes drawin { from { stroke-dashoffset: 220 } to { stroke-dashoffset: 0 } }
+      @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+      @keyframes pulse { 0%,100% { opacity: .2; r: 3 } 50% { opacity: 1; r: 4.4 } }
+      .grid   { animation: gridIn 1.4s ease-out both }
+      .glow   { animation: breathe 7s ease-in-out infinite }
+      .glowb  { animation: breathe 7s ease-in-out infinite; animation-delay: 3.5s }
+      .beamR  { animation: sweep 7.5s linear infinite }
+      .chev   { transform-box: fill-box; transform-origin: center; animation: bob 3.2s ease-in-out infinite }
+      .chev.b { animation-delay: .22s }
+      .chev.c { animation-delay: .44s }
+      .mark   { stroke-dasharray: 220; animation: drawin 1.3s ease-out both }
+      .sheenR { animation: sheenmove 5.5s ease-in-out infinite }
+      .sub    { opacity: 0; animation: fadeUp .9s ease-out .5s both }
+      .cur    { animation: blink 1.1s step-end infinite }
+      .dot    { animation: pulse 2.6s ease-in-out infinite }
+      @media (prefers-reduced-motion: reduce) {
+        .grid,.glow,.glowb,.beamR,.chev,.mark,.sheenR,.sub,.cur,.dot { animation: none }
+        .sub { opacity: 1 }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="340" fill="#f7f8fb"/>
+  <rect class="grid" width="1200" height="340" fill="url(#grid)"/>
+  <ellipse class="glow"  cx="140" cy="70"  rx="360" ry="240" fill="url(#glowI)"/>
+  <ellipse class="glowb" cx="1080" cy="300" rx="380" ry="240" fill="url(#glowC)"/>
+
+  <g class="beamR"><rect x="0" y="0" width="200" height="340" fill="url(#beam)"/></g>
+
+  <g fill="none" stroke="url(#brand)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path class="chev a mark" d="M38 206 L54 180 L70 206"/>
+    <path class="chev b mark" d="M86 196 L104 164 L122 196"/>
+    <path class="chev c mark" d="M138 184 L158 146 L178 184"/>
+  </g>
+
+  <text x="212" y="176" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="58" font-weight="700" letter-spacing="4" fill="url(#brand)">TEJASWI SURESH</text>
+  <g clip-path="url(#wordClip)"><rect class="sheenR" x="0" y="120" width="150" height="80" fill="url(#sheen)" transform="skewX(-18)"/></g>
+
+  <g class="sub">
+    <text x="214" y="224" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="23" letter-spacing="1.5" fill="#4a52c9">the security gateway for AI agents</text>
+    <rect class="cur" x="744" y="205" width="13" height="23" fill="#0891b2"/>
+  </g>
+
+  <text x="215" y="262" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="15" letter-spacing="3" fill="#98a2b3">FOUNDER &amp; CEO · AXIORANK · GUARDRAILS ON BY DEFAULT</text>
+
+  <line x1="215" y1="296" x2="1120" y2="296" stroke="#e3e6ee" stroke-width="2"/>
+  <g fill="#0891b2">
+    <circle class="dot" cx="215"  cy="296" r="3" style="animation-delay:0s"/>
+    <circle class="dot" cx="316"  cy="296" r="3" style="animation-delay:.2s"/>
+    <circle class="dot" cx="417"  cy="296" r="3" style="animation-delay:.4s"/>
+    <circle class="dot" cx="518"  cy="296" r="3" style="animation-delay:.6s"/>
+    <circle class="dot" cx="619"  cy="296" r="3" style="animation-delay:.8s"/>
+    <circle class="dot" cx="720"  cy="296" r="3" style="animation-delay:1s"/>
+    <circle class="dot" cx="821"  cy="296" r="3" style="animation-delay:1.2s"/>
+    <circle class="dot" cx="922"  cy="296" r="3" style="animation-delay:1.4s"/>
+    <circle class="dot" cx="1023" cy="296" r="3" style="animation-delay:1.6s"/>
+    <circle class="dot" cx="1120" cy="296" r="3" style="animation-delay:1.8s"/>
+  </g>
+
+  <rect x="0" y="337" width="1200" height="3" fill="url(#edge)"/>
+</svg>
